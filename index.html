@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scalable Gaussian Processes for AI | Workshop</title>
-  <meta name="description" content="Workshop on Scalable Gaussian Processes for AI.">
+  <title>Scaling Gaussian Processes to AI | Workshop</title>
+  <meta name="description" content="Workshop on Scaling Gaussian Processes to AI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -72,6 +72,17 @@
     }
     .tbc { color: var(--muted); font-style: italic; }
 
+    .button {
+      display: inline-block; margin-top: 8px; padding: 10px 22px;
+      background: var(--accent); color: var(--bg);
+      border-radius: 6px; font-weight: 600; text-decoration: none;
+    }
+    .button:hover { opacity: 0.9; }
+    .button.disabled {
+      background: var(--rule); color: var(--muted);
+      pointer-events: none; cursor: default;
+    }
+
     table { width: 100%; border-collapse: collapse; }
     td { padding: 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
     td:first-child { width: 45%; padding-right: 16px; }
@@ -85,7 +96,8 @@
     <div class="wrap">
       <a href="#about">About</a>
       <a href="#dates">Dates</a>
-      <a href="#cfp">Call for Papers</a>
+      <a href="#registration">Registration</a>
+      <a href="#location">Location</a>
       <a href="#speakers">Speakers</a>
       <a href="#schedule">Schedule</a>
       <a href="#organisers">Organisers</a>
@@ -96,8 +108,8 @@
   <header>
     <div class="wrap">
       <p class="eyebrow">Workshop</p>
-      <h1>Scalable Gaussian Processes for AI</h1>
-      <p class="meta">Date and venue to be announced</p>
+      <h1>Scaling Gaussian Processes to AI</h1>
+      <p class="meta">4–6 August 2027 · University of Southampton, UK</p>
     </div>
   </header>
 
@@ -105,22 +117,34 @@
 
     <section id="about">
       <h2>About</h2>
-      <p class="tbc">Workshop overview and motivation coming soon.</p>
+      <p class="tbc">Workshop overview.</p>
     </section>
 
     <section id="dates">
       <h2>Important Dates</h2>
       <table>
-        <tr><td>Submission deadline</td><td class="tbc">TBA</td></tr>
-        <tr><td>Author notification</td><td class="tbc">TBA</td></tr>
-        <tr><td>Camera-ready deadline</td><td class="tbc">TBA</td></tr>
-        <tr><td>Workshop</td><td class="tbc">TBA</td></tr>
+        <tr><td>Registration opens</td><td>1 March 2027</td></tr>
+        <tr><td>Registration closes</td><td>2 July 2027</td></tr>
+        <tr><td>Workshop</td><td>4–6 August 2027</td></tr>
       </table>
     </section>
 
-    <section id="cfp">
-      <h2>Call for Papers</h2>
-      <p class="tbc">Details on topics and submission instructions coming soon.</p>
+    <section id="registration">
+      <h2>Registration</h2>
+      <p class="tbc">Registration details coming soon.</p>
+      <!-- When the form is ready: set href to the form URL and remove the "disabled" class. -->
+      <a class="button disabled" href="#" target="_blank" rel="noopener">Registration opening soon</a>
+    </section>
+
+    <section id="location">
+      <h2>Location</h2>
+      <table>
+        <tr><td>Venue</td><td>Highfield Campus, University of Southampton</td></tr>
+        <tr><td>Address</td><td>University Road, Southampton SO17 1BJ, UK<br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=University+of+Southampton+Highfield+Campus" target="_blank" rel="noopener">View on map</a></td></tr>
+        <tr><td>Getting there</td><td>Trains run to Southampton Central (about 80 minutes from London Waterloo), then take the U1 Unilink bus to Highfield Campus. Southampton Airport is about 15 minutes away by taxi.</td></tr>
+        <tr><td>Accommodation</td><td>A list of nearby hotels will be posted here.</td></tr>
+      </table>
     </section>
 
     <section id="speakers">
@@ -135,18 +159,21 @@
 
     <section id="organisers">
       <h2>Organisers</h2>
-      <p class="tbc">To be announced.</p>
+      <p class="tbc">Jon Cockayne (University of Southampton) </br>
+        Selin Ahipasaoglu (University of Southampton) </br>
+        Elizaveta Semenova (Imperial College London) </br>
+        Niall Vyas (University of Southampton)</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p class="tbc">Contact details coming soon.</p>
+      <p class="tbc">Make an email at some point.</p>
     </section>
 
   </main>
 
   <footer>
-    <div class="wrap">Scalable Gaussian Processes for AI Workshop</div>
+    <div class="wrap">Scaling Gaussian Processes to AI Workshop</div>
   </footer>
 
 </body>
