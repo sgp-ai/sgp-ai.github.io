@@ -86,6 +86,31 @@
     table { width: 100%; border-collapse: collapse; }
     td { padding: 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
     td:first-child { width: 45%; padding-right: 16px; }
+    th {
+      text-align: left; padding: 10px 0; border-bottom: 1px solid var(--rule);
+      font-size: 13px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--muted);
+    }
+
+    h3 { font-size: 18px; font-weight: 600; margin: 32px 0 8px; }
+    h3:first-of-type { margin-top: 0; }
+    .schedule { margin-bottom: 8px; }
+    .schedule td:first-child, .schedule th:first-child { width: 130px; padding-right: 16px; }
+
+    .speakers { list-style: none; padding: 0; margin: 0; }
+    .speakers li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+    .speakers .name { font-weight: 600; }
+    .speakers .affil { color: var(--muted); }
+    .speakers .talk { font-style: italic; margin-top: 2px; }
+
+    .sponsors { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+    /* White tile keeps the dark-text logos legible in dark mode */
+    .sponsors a {
+      display: flex; align-items: center;
+      background: #ffffff; border: 1px solid var(--rule);
+      border-radius: 8px; padding: 16px 20px;
+    }
+    .sponsors img { height: 64px; width: auto; max-width: 100%; display: block; }
 
     footer { padding: 32px 0 56px; color: var(--muted); font-size: 15px; }
   </style>
@@ -149,12 +174,42 @@
 
     <section id="speakers">
       <h2>Invited Speakers</h2>
-      <p class="tbc">To be announced.</p>
+      <!-- Add one <li> per speaker; drop class="tbc" from .talk once the title is known. -->
+      <ul class="speakers">
+        <li>
+          <span class="name">Elizaveta Semenova</span> · <span class="affil">Imperial College London</span>
+          <div class="talk tbc">Talk title to be announced</div>
+        </li>
+        <li>
+          <span class="name">Carl Henrik Ek</span> · <span class="affil">University of Cambridge</span>
+          <div class="talk tbc">Talk title to be announced</div>
+        </li>
+      </ul>
     </section>
 
     <section id="schedule">
       <h2>Schedule</h2>
-      <p class="tbc">To be announced.</p>
+
+      <h3>Wednesday 4 August</h3>
+      <table class="schedule">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td class="tbc">TBA</td><td class="tbc">To be announced</td></tr>
+      </table>
+
+      <h3>Thursday 5 August</h3>
+      <table class="schedule">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td class="tbc">TBA</td><td class="tbc">To be announced</td></tr>
+      </table>
+
+      <h3>Friday 6 August</h3>
+      <table class="schedule">
+        <tr><th>Time</th><th>Session</th></tr>
+        <tr><td class="tbc">TBA</td><td class="tbc">To be announced</td></tr>
+      </table>
+
+      <!-- When the PDF is ready: put it in the repo (e.g. files/schedule.pdf), set href to it and remove the "disabled" class. -->
+      <a class="button disabled" href="#" target="_blank" rel="noopener">Schedule PDF coming soon</a>
     </section>
 
     <section id="organisers">
@@ -168,6 +223,18 @@
     <section id="contact">
       <h2>Contact</h2>
       <p class="tbc">Make an email at some point.</p>
+    </section>
+
+    <section id="sponsors">
+      <h2>Sponsors</h2>
+      <div class="sponsors">
+        <a href="https://www.probai.uk/" target="_blank" rel="noopener">
+          <img src="images/logos/prob_ai.svg" alt="ProbAI Hub">
+        </a>
+        <a href="https://www.ukri.org/councils/epsrc/" target="_blank" rel="noopener">
+          <img src="images/logos/UKRI%20EPSRC%20logo%20(RGB).png" alt="UKRI Engineering and Physical Sciences Research Council">
+        </a>
+      </div>
     </section>
 
   </main>
