@@ -53,6 +53,11 @@
     nav a:hover { color: var(--accent); }
 
     header { padding: 72px 0 48px; border-bottom: 1px solid var(--rule); }
+    .host-logo { display: block; height: 52px; width: auto; max-width: 100%; margin: 0 0 32px; }
+    /* The logo is single-colour blue, so render it white on the dark background */
+    @media (prefers-color-scheme: dark) {
+      .host-logo { filter: brightness(0) invert(1); }
+    }
     .eyebrow {
       text-transform: uppercase; letter-spacing: 0.12em;
       font-size: 13px; font-weight: 600; color: var(--accent);
@@ -133,6 +138,7 @@
 
   <header>
     <div class="wrap">
+      <img class="host-logo" src="images/logos/university-of-southampton-text.png" alt="University of Southampton">
       <p class="eyebrow">Workshop</p>
       <h1>Scaling Gaussian Processes to AI</h1>
       <p class="meta">2–4 August 2027 · University of Southampton, UK</p>
