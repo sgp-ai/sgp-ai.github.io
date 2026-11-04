@@ -78,6 +78,7 @@
       border-radius: 6px; font-weight: 600; text-decoration: none;
     }
     .button:hover { opacity: 0.9; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 12px; }
     .button.disabled {
       background: var(--rule); color: var(--muted);
       pointer-events: none; cursor: default;
@@ -134,7 +135,7 @@
     <div class="wrap">
       <p class="eyebrow">Workshop</p>
       <h1>Scaling Gaussian Processes to AI</h1>
-      <p class="meta">4–6 August 2027 · University of Southampton, UK</p>
+      <p class="meta">2–4 August 2027 · University of Southampton, UK</p>
     </div>
   </header>
 
@@ -150,15 +151,18 @@
       <table>
         <tr><td>Registration opens</td><td>1 March 2027</td></tr>
         <tr><td>Registration closes</td><td>2 July 2027</td></tr>
-        <tr><td>Workshop</td><td>4–6 August 2027</td></tr>
+        <tr><td>Workshop</td><td>2–4 August 2027</td></tr>
       </table>
     </section>
 
     <section id="registration">
       <h2>Registration</h2>
-      <p class="tbc">Registration details coming soon.</p>
-      <!-- When the form is ready: set href to the form URL and remove the "disabled" class. -->
-      <a class="button disabled" href="#" target="_blank" rel="noopener">Registration opening soon</a>
+      <p>Registration opens on 1 March 2027. Register your interest now and we'll send you a reminder.</p>
+      <div class="buttons">
+        <a class="button" href="https://forms.cloud.microsoft/e/expwQmcXWg" target="_blank" rel="noopener">Register interest</a>
+        <!-- When the form is ready: set href to the form URL and remove the "disabled" class. -->
+        <a class="button disabled" href="#" target="_blank" rel="noopener">Registration opening soon</a>
+      </div>
     </section>
 
     <section id="location">
